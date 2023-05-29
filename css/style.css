@@ -1,59 +1,198 @@
-/* estilos del header */
-header{
-    background-color: rgb(29, 184, 184);
-    display: flex; 
-    justify-content: space-evenly;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  background-image: linear-gradient(
+      rgba(16, 16, 16, 0.4),
+      rgba(16, 16, 16, 0.4)
+    ),
+    url("https://thumbs.dreamstime.com/z/m%C3%A9dicos-trabajando-con-un-colega-en-el-hospital-doctor-otro-m%C3%A9dico-atenci%C3%B3n-m%C3%A9dica-y-servicios-199931757.jpg");
+}
+/* estilos del header generales */
+header {
+  padding: 1rem;
+  background-color: rgb(29, 184, 184);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+img {
+  width: 1400px;
+  height: 400px;
+}
+h1 {
+  color: rgb(243, 243, 243);
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-img{
-    width: 1400px;
-    height: 400px;
+/* estilos del main generales */
+p {
+  color: rgb(49, 102, 133);
+  font-family: inherit;
+}
+h6 {
+  color: rgb(14, 107, 107);
+  font-family: inherit;
+  text-align: left;
 }
 
-h1{
-    color:beige ;
+/* estilos del nav generales */
+nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  width: auto;
 }
-/* estilos del header */
-
-/* estilos del nav */
-nav{
-    padding: 1rem;
-    display: flex;
-    justify-content:center;
-    width: auto;
+ul {
+  display: flex;
+  gap: 1rem;
 }
-
-ul{
-    display: flex;
-    gap: 1rem;
+li {
+  list-style: none;
 }
-
-li{
-    list-style: none;
+a {
+  color: rgb(29, 184, 184);
+  text-decoration: none;
 }
 
-a{
-    color: rgb(29, 184, 184);
-    text-decoration: none;
+/* estilos del index */
+.container {
+  padding: 2rem;
 }
-/* estilos del nav */
-
-/* estilos del main */
-
-
-/* estilos de los textos */
-.container{
-    background-color: rgb(250, 244, 255);
+.piefoto {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 4px #000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem;
+  margin-left: 2rem;
 }
-/* estilos de los textos */
-
-/* estilos del footer */
-footer{
-    margin-top: auto;
-    text-align: center;
-    color: rgb(254, 255, 255);
-    background-color: rgb(29, 184, 184);
-    height: 2rem;
+.form_container,
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* estilos del footer*/
+.form {
+  flex-direction: column;
+  margin-left: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 4px #000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem;
+}
+input,
+button {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 4px;
+  box-shadow: 2px 2px 4px #000;
+}
+button {
+  margin-top: 1rem;
+  background-color: rgb(14, 107, 107);
+  color: beige;
+  padding: 4px 8px;
+  font-weight: 600;
+}
+button:hover {
+  background-color: beige;
+  color: rgb(14, 107, 107);
+  transform: scale(0.9);
+  transition: 300ms;
+}
+
+/* Page quienes somos */
+.h1conocenos {
+  color: rgb(41, 69, 80);
+  font-family: inherit;
+}
+.introduccion {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 4px #000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem;
+  margin-left: 2rem;
+}
+
+/* Page contacto */
+.h1contacto {
+  color: rgb(41, 69, 80);
+  font-family: inherit;
+}
+.tablacontacto {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 4px #000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem;
+  margin-left: 2rem;
+  color: rgb(41, 69, 80);
+}
+
+/* Page horarios de antencion */
+.h1horarios {
+  color: rgb(41, 69, 80);
+  font-family: inherit;
+}
+.tablahorarios {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 4px #000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem;
+  margin-left: 2rem;
+  color: rgb(41, 69, 80);
+}
+
+/* Page pacientes */
+.h1pacientes {
+  color: rgb(41, 69, 80);
+  font-family: inherit;
+}
+.tablapacientes {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 4px #000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem;
+  margin-left: 2rem;
+  color: rgb(41, 69, 80);
+}
+
+/* Page medicos*/
+.h1medicos {
+  color: rgb(41, 69, 80);
+  font-family: inherit;
+}
+.tablamedicos {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 4px #000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem;
+  margin-left: 2rem;
+  color: rgb(41, 69, 80);
+}
+
+/* estilos del footer generales */
+footer {
+  margin-top: auto;
+  text-align: center;
+  color: rgb(254, 255, 255);
+  background-color: rgb(30, 187, 187);
+  height: 2rem;
+}
