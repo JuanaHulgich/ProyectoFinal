@@ -54,10 +54,17 @@ li {
   list-style: none;
 }
 a {
-  color: rgb(29, 184, 184);
   text-decoration: none;
+  background-color: rgb(29, 184, 184);
+  color: rgb(243, 243, 243);
+  padding: 10px 12px;
+  border-radius: 16px;
 }
-
+a:hover {
+  background-color: rgb(14, 107, 107);
+  color: rgb(254, 255, 255);
+  border-radius: 16px;
+}
 /* estilos del index */
 .container {
   padding: 2rem;
@@ -156,7 +163,7 @@ button:hover {
   color: rgb(41, 69, 80);
 }
 
-/* Page pacientes */
+/* Page Pacientes */
 .h1pacientes {
   color: rgb(41, 69, 80);
   font-family: inherit;
@@ -171,7 +178,15 @@ button:hover {
   margin-left: 2rem;
   color: rgb(41, 69, 80);
 }
-
+.download {
+  padding: 10px;
+  background-color: rgb(41, 69, 80);
+  color: rgb(243, 243, 243);
+}
+.download:hover {
+  background-color: rgb(14, 107, 107);
+  color: rgb(254, 255, 255);
+}
 /* Page medicos*/
 .h1medicos {
   color: rgb(41, 69, 80);
